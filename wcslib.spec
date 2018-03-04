@@ -69,12 +69,12 @@ Dokumentacja API bibliotek WCSLIB.
 %build
 %configure
 
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} -j1 install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 # split over packages as %doc
