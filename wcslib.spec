@@ -5,13 +5,13 @@
 Summary:	WCSLIB - an implementation of the FITS WCS standard
 Summary(pl.UTF-8):	WCSLIB - implementacja standardu FITS WCS
 Name:		wcslib
-Version:	6.2
+Version:	7.3
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
 Source0:	ftp://ftp.atnf.csiro.au/pub/software/wcslib/%{name}-%{version}.tar.bz2
-# Source0-md5:	f2848d5f12299b89a821208fb5d00bce
-URL:		http://www.atnf.csiro.au/people/mcalabre/WCS/wcslib
+# Source0-md5:	1c61330657882daff67672c9bd1c1afe
+URL:		https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib/
 BuildRequires:	cfitsio-devel
 BuildRequires:	flex >= 2.5.9
 BuildRequires:	gcc-fortran
@@ -94,9 +94,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/wcsgrid
 %attr(755,root,root) %{_bindir}/wcsware
 %attr(755,root,root) %{_libdir}/libpgsbox.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/libpgsbox.so.6
+%attr(755,root,root) %ghost %{_libdir}/libpgsbox.so.7
 %attr(755,root,root) %{_libdir}/libwcs.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/libwcs.so.6
+%attr(755,root,root) %ghost %{_libdir}/libwcs.so.7
 %{_mandir}/man1/HPXcvt.1*
 %{_mandir}/man1/fitshdr.1*
 %{_mandir}/man1/wcsgrid.1*
