@@ -5,17 +5,18 @@
 Summary:	WCSLIB - an implementation of the FITS WCS standard
 Summary(pl.UTF-8):	WCSLIB - implementacja standardu FITS WCS
 Name:		wcslib
-Version:	7.3
+Version:	7.3.1
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
 Source0:	ftp://ftp.atnf.csiro.au/pub/software/wcslib/%{name}-%{version}.tar.bz2
-# Source0-md5:	1c61330657882daff67672c9bd1c1afe
+# Source0-md5:	9160f327f09f9f7f351b77f98437834c
 URL:		https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib/
 BuildRequires:	cfitsio-devel
 BuildRequires:	flex >= 2.5.9
 BuildRequires:	gcc-fortran
 BuildRequires:	pgplot-devel
+BuildRequires:	rpmbuild(macros) >= 1.752
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,9 +54,7 @@ Statyczne biblioteki WCSLIB.
 Summary:	API documentation for WCSLIB libraries
 Summary(pl.UTF-8):	Dokumentacja API bibliotek WCSLIB
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
-BuildArch:	noarch
-%endif
+%{?noarchpackage}
 
 %description apidocs
 API documentation for WCSLIB libraries.
