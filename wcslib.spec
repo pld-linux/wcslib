@@ -54,7 +54,7 @@ Statyczne biblioteki WCSLIB.
 Summary:	API documentation for WCSLIB libraries
 Summary(pl.UTF-8):	Dokumentacja API bibliotek WCSLIB
 Group:		Documentation
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description apidocs
 API documentation for WCSLIB libraries.
