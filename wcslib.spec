@@ -5,17 +5,18 @@
 Summary:	WCSLIB - an implementation of the FITS WCS standard
 Summary(pl.UTF-8):	WCSLIB - implementacja standardu FITS WCS
 Name:		wcslib
-Version:	7.3.1
+Version:	7.6
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
 Source0:	ftp://ftp.atnf.csiro.au/pub/software/wcslib/%{name}-%{version}.tar.bz2
-# Source0-md5:	9160f327f09f9f7f351b77f98437834c
+# Source0-md5:	8fea0d68e0a0d3946c2c39d62f7198a2
 URL:		https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib/
 BuildRequires:	cfitsio-devel
-BuildRequires:	flex >= 2.5.9
+BuildRequires:	flex >= 2.6.0
 BuildRequires:	gcc-fortran
 BuildRequires:	pgplot-devel
+BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.752
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -90,6 +91,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES README THANKS
 %attr(755,root,root) %{_bindir}/HPXcvt
 %attr(755,root,root) %{_bindir}/fitshdr
+%attr(755,root,root) %{_bindir}/sundazel
 %attr(755,root,root) %{_bindir}/wcsgrid
 %attr(755,root,root) %{_bindir}/wcsware
 %attr(755,root,root) %{_libdir}/libpgsbox.so.*.*
@@ -98,6 +100,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libwcs.so.7
 %{_mandir}/man1/HPXcvt.1*
 %{_mandir}/man1/fitshdr.1*
+%{_mandir}/man1/sundazel.1*
 %{_mandir}/man1/wcsgrid.1*
 %{_mandir}/man1/wcsware.1*
 
