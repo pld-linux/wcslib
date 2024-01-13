@@ -5,12 +5,12 @@
 Summary:	WCSLIB - an implementation of the FITS WCS standard
 Summary(pl.UTF-8):	WCSLIB - implementacja standardu FITS WCS
 Name:		wcslib
-Version:	7.12
+Version:	8.2.2
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
 Source0:	ftp://ftp.atnf.csiro.au/pub/software/wcslib/%{name}-%{version}.tar.bz2
-# Source0-md5:	20ba662a2ac0ccef6f34fe75685ab814
+# Source0-md5:	bbe3d8ba9d62cf27469d5093a69a18f5
 URL:		https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib/
 BuildRequires:	cfitsio-devel
 BuildRequires:	flex >= 2.6.0
@@ -96,9 +96,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/wcsgrid
 %attr(755,root,root) %{_bindir}/wcsware
 %attr(755,root,root) %{_libdir}/libpgsbox.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/libpgsbox.so.7
+%attr(755,root,root) %ghost %{_libdir}/libpgsbox.so.8
 %attr(755,root,root) %{_libdir}/libwcs.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/libwcs.so.7
+%attr(755,root,root) %ghost %{_libdir}/libwcs.so.8
 %{_mandir}/man1/HPXcvt.1*
 %{_mandir}/man1/fitshdr.1*
 %{_mandir}/man1/sundazel.1*
